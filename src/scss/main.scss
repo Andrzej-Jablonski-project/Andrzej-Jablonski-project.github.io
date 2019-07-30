@@ -1,16 +1,60 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: #171F3F;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  padding: 4rem 1rem 0 1rem;
+
+  &__image {
+    width: 80px;
+    padding: 3px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    border: 5px solid #CBD2D9;
+    background: #171F3F;
+  }
+
+  &__header {
+    margin: 0 0 0.5rem 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+
+  &__description {
+    margin: 0 0 2.5rem 0;
+    color: #52606D;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+  }
+
+  &__email-link {
+    padding-bottom: 0.5rem;
+    color: #0593FB;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    border-bottom: 2px solid #0593FB;
+  }
 }

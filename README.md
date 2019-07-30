@@ -1,1 +1,0 @@
-# Andrzej-Jablonski-project.github.io

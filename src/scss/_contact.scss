@@ -1,0 +1,65 @@
+.contact {
+    padding: 7.5rem 1rem;
+    color: #fff;
+    background-color: #171F3F;
+
+    &__title {
+        margin: 0 0 0.5rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 4px;
+            margin-bottom: 0.5rem;
+            background: #0593FB;
+            border-radius: 8px;
+        }
+    }
+
+    &__description {
+        margin: 0 0 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+    }
+
+    &__icons-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1.5rem;
+        background-image: url(../assets/img/fb-icon.svg);
+        background-size: cover;
+
+        &--image-github {
+            background-image: url(../assets/img/githubc-icon.svg);
+        }
+
+        &--image-blog {
+            background-image: url(../assets/img/blogging1.svg);
+        }
+    }
+
+    &__email-link {
+        padding-bottom: 0.25rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        color: #0593FB;
+        border-bottom: 2px solid #0593FB;
+        text-decoration: none;
+    }
+}

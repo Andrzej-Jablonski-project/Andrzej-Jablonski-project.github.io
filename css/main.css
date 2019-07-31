@@ -497,4 +497,59 @@ body {
         content: "";
         background-image: url(../assets/img/code-icon.svg); }
 
+.contact {
+  padding: 7.5rem 1rem;
+  color: #fff;
+  background-color: #171F3F; }
+  .contact__title {
+    margin: 0 0 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem; }
+    .contact__title::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      margin-bottom: 0.5rem;
+      background: #0593FB;
+      border-radius: 8px; }
+  .contact__description {
+    margin: 0 0 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.625rem; }
+  .contact__icons-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem; }
+  .contact__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+    background-image: url(../assets/img/fb-icon.svg);
+    background-size: cover; }
+    .contact__icon--image-github {
+      background-image: url(../assets/img/githubc-icon.svg); }
+    .contact__icon--image-blog {
+      background-image: url(../assets/img/blogging1.svg); }
+  .contact__email-link {
+    padding-bottom: 0.25rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #0593FB;
+    border-bottom: 2px solid #0593FB;
+    text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */

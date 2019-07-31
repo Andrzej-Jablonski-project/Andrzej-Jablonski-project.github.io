@@ -1,40 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<html lang="pl">
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <img src="assets/img/andrzej.jpg" alt="Zdjęcie Andrzeja Jabłońskiego." class="hero__image">
+    <h2 class="hero__header">Witam! 👋 Mam na imię Andrzej i jestem aspirującym junior Frontend developerem. Autor bloga
+      digi-chip.</h2>
+    <p class="hero__description">Możesz być zainteresowany sprawdzeniem listy moich umiejętności. Nie zapomnij rzucić
+      okiem na moje projekty. Obecnie szukam nowych wyzwań, więc jeśli je masz - skontaktuj się ze mną :-)</p>
+    <a href="mailto:andrzej@audioszum.pl" class="hero__email-link">andrzej@audioszum.pl</a>
+  </header>
+  <section class="skills">
+    <h2 class="skills__title">Moje umiejętności</h2>
+    <section class="skills__group">
+      <h3 class="skills__subtitle">Wiedza praktyczna</h3>
+      <ul class="skills__list">
+        <li class="skills__item">Semantyczny HTML5</li>
+        <li class="skills__item">CSS grid</li>
+        <li class="skills__item">Flexbox</li>
+        <li class="skills__item">Markdown</li>
+        <li class="skills__item">JS: praca z DOM</li>
+        <li class="skills__item">JS: Local storage</li>
+        <li class="skills__item">SASS</li>
+        <li class="skills__item">Figma</li>
+      </ul>
+    </section>
+    <section class="skills__group">
+      <h3 class="skills__subtitle skills__subtitle--decoline-violet">Wiedza cząstkowa</h3>
+      <ul class="skills__list">
+        <li class="skills__item skills__item--icon-violet">Elementy JavaScript ES6+</li>
+        <li class="skills__item skills__item--icon-violet">Progressive web apps</li>
+        <li class="skills__item skills__item--icon-violet">Animacje CSS</li>
+        <li class="skills__item skills__item--icon-violet">Git</li>
+        <li class="skills__item skills__item--icon-violet">Praca z API</li>
+        <li class="skills__item skills__item--icon-violet">Dostępność (accessibility)</li>
+        <li class="skills__item skills__item--icon-violet">NPM Scripts</li>
+        <li class="skills__item skills__item--icon-violet">Język angielski, dokumentacja plus słownik</li>
+      </ul>
+    </section>
+    <section class="skills__group">
+      <h3 class="skills__subtitle skills__subtitle--decoline-blue">Chcę nauczyć się</h3>
+      <ul class="skills__list">
+        <li class="skills__item skills__item--icon-blue">Język angielski</li>
+        <li class="skills__item skills__item--icon-blue">React JS</li>
+        <li class="skills__item skills__item--icon-blue">Typescript</li>
+        <li class="skills__item skills__item--icon-blue">Node.JS</li>
+        <li class="skills__item skills__item--icon-blue">Gatsby</li>
+        <li class="skills__item skills__item--icon-blue">Websockets</li>
+        <li class="skills__item skills__item--icon-blue">Server side rendering</li>
+      </ul>
+    </section>
+  </section>
+  <section class="projects">
+    <h2 class="projects__title">Ostatnie projekty</h2>
+    <p class="projects__description">Ścieżkę Frontend developera zacząłem pod koniec 2018 roku. Od tego czasu zbudowałem
+      kilka projektów. Oto lista rzeczy, które dotychczas zrobiłem.</p>
+    <div class="wrapper-cards">
+      <section class="card">
+        <img src="" alt="" class="card__icon">
+        <h3 class="card__project-name">millenniumfalcon.js</h3>
+        <p class="card__project-description">Code that makes my Lego Millenium Falcon alive</p>
+        <footer class="card__footer">
+          <a href="#" class="card__link">Demo</a>
+          <a href="#" class="card__link">Github</a>
+        </footer>
+      </section>
+      <section class="card">
+        <img src="" alt="" class="card__icon">
+        <h3 class="card__project-name">millenniumfalcon.js</h3>
+        <p class="card__project-description">Code that makes my Lego Millenium Falcon alive</p>
+        <footer class="card__footer">
+          <a href="" class="card__link">Demo</a>
+          <a href="" class="card__link">Github</a>
+        </footer>
+      </section>
+      <section class="card">
+        <img src="" alt="" class="card__icon">
+        <h3 class="card__project-name">millenniumfalcon.js</h3>
+        <p class="card__project-description">Code that makes my Lego Millenium Falcon alive</p>
+        <footer class="card__footer">
+          <a href="" class="card__link">Demo</a>
+          <a href="" class="card__link">Github</a>
+        </footer>
+      </section>
+      <section class="card">
+        <img src="" alt="" class="card__icon">
+        <h3 class="card__project-name">millenniumfalcon.js</h3>
+        <p class="card__project-description">Code that makes my Lego Millenium Falcon alive</p>
+        <footer class="card__footer">
+          <a href="" class="card__link">Demo</a>
+          <a href="" class="card__link">Github</a>
+        </footer>
+      </section>
+    </div>
+  </section>
+  <section class="contact">
+    <h2 class="contact__title">Skontaktuj się ze mną</h2>
+    <p class="contact__description">Jestem otwarty na nowe możliwości. Jeśli masz coś dla mnie, porozmawiajmy!
+    </p>
+    <div class="wrapper-icons">
+      <a href="" class="contact__icon"></a>
+      <a href="" class="contact__icon"></a>
+      <a href="" class="contact__icon"></a>
+    </div>
+    <a href="mailto:andrzej@audioszum.pl" class="contact__email-link">andrzej@audioszum.pl</a>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,21 +1,7 @@
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
+@import "_body";
 @import "_hero";
 @import "_skills";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  color: #171F3F;
-  background: #fff;
-  font-family: 'Poppins', sans-serif;
-}
+@import "_projects";

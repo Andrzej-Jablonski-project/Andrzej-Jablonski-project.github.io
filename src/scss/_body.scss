@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #171F3F;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}

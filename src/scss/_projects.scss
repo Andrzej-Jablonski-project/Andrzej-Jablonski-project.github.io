@@ -1,0 +1,95 @@
+.projects {
+    padding: 5rem 1rem 4rem 1rem;
+    background: #F5F7FA;
+
+    &__title {
+        margin: 0 0 0.5rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    &__description {
+        margin: 0 0 2rem;
+        color: #52606D;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+        text-align: center;
+    }
+}
+
+.card {
+    margin-bottom: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+    border-radius: 4px;
+
+    &__icon {
+        width: 2.5rem;
+        margin: 2rem auto 1rem 2rem;
+    }
+
+    &__project-name {
+        margin: 0 1.688rem 0.25rem 2rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5rem
+    }
+
+    &__project-description {
+        margin: 0 1.688rem 2rem 2rem;
+        color: #52606D;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 3rem;
+        padding-right: 2rem;
+        background: #F5F7FA;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        padding-right: 1rem;
+        border-right: 1px solid #CBD2D9;
+        color: #0593FB;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+        text-decoration: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.375rem;
+            background-image: url(../assets/img/demo-icon.svg);
+            background-size: cover;
+        }
+
+        &--github {
+            padding-right: 0;
+            border-right: none;
+
+            &::before {
+                content: "";
+                background-image: url(../assets/img/code-icon.svg);
+            }
+        }
+    }
+}

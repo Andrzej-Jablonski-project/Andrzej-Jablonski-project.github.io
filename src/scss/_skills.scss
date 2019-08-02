@@ -1,10 +1,15 @@
 .skills {
-    margin-bottom: 5rem;
-    padding: 0 0.625rem 0 1rem;
 
-    @media(min-width: 1440px) {
-        margin-bottom: 11.19rem;
-        padding: 0 10.25rem 0 5.563rem;
+    &__container {
+        width: 100%;
+        max-width: 1440px;
+        margin-bottom: 5rem;
+        padding: 0 0.625rem 0 1rem;
+
+        @media(min-width: 1440px) {
+            margin: 0 auto 11.19rem auto;
+            padding: 0 10.25rem 0 5.563rem;
+        }
     }
 
     &__title {
@@ -80,13 +85,16 @@
         list-style: none;
 
         @media (min-width: 1440px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            column-count: 2;
             margin: 1.75rem 0.1875rem 0 0;
         }
     }
 
     &__item {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-left: 1.5rem;
         color: #52606D;
         font-style: normal;
         font-weight: normal;
@@ -104,7 +112,9 @@
 
         &::before {
             content: "";
-            display: inline-block;
+            position: absolute;
+            top: 0.75rem;
+            left: 0;
             width: 0.75rem;
             height: 0.75rem;
             margin-right: 0.75rem;

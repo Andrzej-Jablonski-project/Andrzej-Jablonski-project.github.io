@@ -1,10 +1,16 @@
 .contact {
-    padding: 7.5rem 1rem;
     color: #fff;
     background-color: #171F3F;
 
-    @media(min-width: 1440px) {
-        padding: 8rem 7rem;
+    &__container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 7.5rem 1rem;
+
+        @media(min-width: 1440px) {
+            padding: 8rem 7rem;
+        }
     }
 
     &__title {

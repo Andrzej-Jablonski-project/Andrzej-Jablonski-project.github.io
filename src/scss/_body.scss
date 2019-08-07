@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 *,
@@ -9,11 +10,11 @@ html {
 }
 
 body {
-    color: #171F3F;
-    background: #fff;
+    color: $bigStone;
+    background: $white;
     font-family: 'Poppins', sans-serif;
 
-    @media (min-width: 1440px) {
-        border: 16px solid #171F3F;
+    @media (min-width: $tablet) {
+        border: 16px solid $bigStone;
     }
 }

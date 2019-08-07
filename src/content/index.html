@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title></title>
+  <title>Moje Frontendowe CV.</title>
   <meta name="description" content="Description" />
 
   <!-- Title -->
@@ -17,29 +17,23 @@
   <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
   <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-  <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
-
   <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
-
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
   <header class="hero">
-    <div class="hero__container">
-      <img src="assets/img/andrzej.jpg" alt="Zdjęcie Andrzeja Jabłońskiego." class="hero__image">
-      <h2 class="hero__header">Witam! 👋 Mam na imię Andrzej i jestem aspirującym junior Frontend developerem. Autor
-        bloga
-        digi-chip.</h2>
-      <p class="hero__description">Możesz być zainteresowany sprawdzeniem listy moich umiejętności. Nie zapomnij rzucić
-        okiem na moje projekty. Obecnie szukam nowych wyzwań, więc jeśli je masz - skontaktuj się ze mną :-)</p>
-      <a href="mailto:andrzej@audioszum.pl" class="hero__email-link">andrzej@audioszum.pl</a>
-    </div>
+    <img src="assets/img/andrzej.jpg" alt="Zdjęcie Andrzeja Jabłońskiego." class="hero__image">
+    <h2 class="hero__header">Witam! 👋 Mam na imię Andrzej i jestem aspirującym Frontend developerem. Autor
+      bloga digi-chip.</h2>
+    <p class="hero__description">Możesz być zainteresowany sprawdzeniem listy moich umiejętności. Nie zapomnij rzucić
+      okiem na moje projekty. Obecnie szukam nowych wyzwań, więc jeśli je masz - skontaktuj się ze mną.</p>
+    <a href="mailto:andrzej@audioszum.pl" class="hero__email-link">andrzej@audioszum.pl</a>
   </header>
-  <section class="skills">
-    <div class="skills__container">
+  <main class="main">
+    <section class="skills">
       <h2 class="skills__title">Moje umiejętności</h2>
       <section class="skills__group">
         <h3 class="skills__subtitle">Wiedza praktyczna</h3>
@@ -79,33 +73,35 @@
           <li class="skills__item skills__item--icon-blue">Server side rendering</li>
         </ul>
       </section>
-    </div>
-  </section>
-  <section class="projects">
-    <div class="projects__container">
-      <h2 class="projects__title">Ostatnie projekty</h2>
-      <p class="projects__description">Ścieżkę Frontend developera zacząłem pod koniec 2018 roku. Od tego czasu
-        zbudowałem
-        kilka projektów. Oto lista rzeczy, które dotychczas zrobiłem.</p>
-      <div class="wrapper-cards">
+    </section>
+    <section class="projects">
+      <div class="projects__container">
+        <h2 class="projects__title">Ostatnie projekty</h2>
+        <p class="projects__description">Ścieżkę Frontend developera zacząłem pod koniec 2018 roku. Od tego czasu
+          zbudowałem
+          kilka projektów. Oto lista rzeczy, które dotychczas zrobiłem.</p>
+        <ul class="card-list">
+        </ul>
       </div>
-    </div>
-  </section>
-  <section class="contact">
+    </section>
+  </main>
+  <footer class="contact">
     <div class="contact__container">
       <h2 class="contact__title">Skontaktuj się ze mną</h2>
       <p class="contact__description">Jestem otwarty na nowe możliwości. Jeśli masz coś dla mnie, porozmawiajmy!
       </p>
-      <div class="contact__icons-wrapper">
-        <a target="_blank" rel="noopener" href="https://www.facebook.com/rzufandrzej" class="contact__icon"></a>
-        <a target="_blank" rel="noopener" href="https://github.com/Andrzej-Jablonski-project"
-          class="contact__icon contact__icon--image-github"></a>
-        <a target="_blank" rel="noopener" href="https://digi-chip.pl"
-          class="contact__icon contact__icon--image-blog"></a>
-      </div>
+      <ul class="contact__icons-list">
+        <li class="contact__icons-item"><a target="_blank" rel="noopener noreferrer"
+            href="https://www.facebook.com/rzufandrzej" class="contact__icon"></a></li>
+        <li class="contact__icons-item"><a target="_blank" rel="noopener noreferrer"
+            href="https://github.com/Andrzej-Jablonski-project" class="contact__icon contact__icon--image-github"></a>
+        </li>
+        <li class="contact__icons-item"><a target="_blank" rel="noopener noreferrer" href="https://digi-chip.pl"
+            class="contact__icon contact__icon--image-blog"></a></li>
+      </ul>
       <a href="mailto:andrzej@audioszum.pl" class="contact__email-link">andrzej@audioszum.pl</a>
     </div>
-  </section>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 

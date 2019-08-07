@@ -1,29 +1,26 @@
 .skills {
+    margin: 0 1rem 5rem 1rem;
 
-    &__container {
+    @media(min-width: $tablet) {
         width: 100%;
-        max-width: 1440px;
-        margin-bottom: 5rem;
-        padding: 0 0.625rem 0 1rem;
-
-        @media(min-width: 1440px) {
-            margin: 0 auto 11.19rem auto;
-            padding: 0 10.25rem 0 5.563rem;
-        }
+        max-width: 1216px;
+        margin: 0 auto 10.5rem;
+        padding: 0 1rem;
     }
 
+
     &__title {
-        margin: 0 0.375rem 3.875rem 0;
+        margin: 0 0 3.875rem 0;
         padding-bottom: 0.75rem;
         font-style: normal;
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 2rem;
         text-align: center;
-        border-bottom: 2px solid #CBD2D9;
+        border-bottom: 2px solid rgba(203, 210, 217, 0.5);
 
-        @media(min-width: 1440px) {
-            margin: 0 0.1875rem 8rem 0;
+        @media(min-width: $tablet) {
+            margin-bottom: 8rem;
             padding-bottom: 1rem;
             font-size: 2.25rem;
             line-height: 3rem;
@@ -32,7 +29,13 @@
     }
 
     &__group {
-        @media (min-width: 1440px) {
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-bottom: 8rem;
+        }
+
+        @media (min-width: $desktop) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             margin-bottom: 8rem;
@@ -40,13 +43,13 @@
     }
 
     &__subtitle {
-        margin: 0 0 0.5rem 0;
+        margin: 0;
         font-style: normal;
         font-weight: 600;
         font-size: 1.375rem;
         line-height: 2rem;
 
-        @media(min-width: 1440px) {
+        @media(min-width: $tablet) {
             font-size: 2rem;
             line-height: 2.75rem;
         }
@@ -56,25 +59,25 @@
             display: block;
             width: 40px;
             height: 4px;
-            margin-bottom: 1.5rem;
-            background: #06C847;
+            margin-bottom: 0.5rem;
+            background: $green;
             border-radius: 8px;
-            transform: matrix(1, 0, 0, -1, 0, 0);
 
-            @media (min-width: 1440px) {
-                width: 80px
+            @media (min-width: $tablet) {
+                width: 80px;
+                margin-bottom: 1.5rem;
             }
         }
 
         &--decoline-violet {
             &::before {
-                background: #653CAD;
+                background: $violet;
             }
         }
 
         &--decoline-blue {
             &::before {
-                background: #2251CC;
+                background: $blue;
             }
         }
     }
@@ -84,9 +87,9 @@
         padding: 0;
         list-style: none;
 
-        @media (min-width: 1440px) {
+        @media (min-width: $tablet) {
             column-count: 2;
-            margin: 1.75rem 0.1875rem 0 0;
+            margin: 1.75rem 0 0;
         }
     }
 
@@ -95,13 +98,13 @@
         top: 0;
         left: 0;
         padding-left: 1.5rem;
-        color: #52606D;
+        color: $shuttleGray;
         font-style: normal;
         font-weight: normal;
         font-size: 0.875rem;
         line-height: 2.25rem;
 
-        @media(min-width: 1440px) {
+        @media(min-width: $tablet) {
             position: relative;
             top: 0;
             left: 0;
@@ -121,7 +124,7 @@
             background-image: url(../assets/img/check-circle.svg);
             background-size: cover;
 
-            @media (min-width: 1440px) {
+            @media (min-width: $tablet) {
                 position: absolute;
                 top: 0.625rem;
                 left: 0;

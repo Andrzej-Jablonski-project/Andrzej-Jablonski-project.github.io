@@ -1,10 +1,11 @@
 .hero {
+    margin: 4rem 1rem 8.125rem 1rem;
 
-    &__container {
+    @media(min-width: $tablet) {
         width: 100%;
-        max-width: 1440px;
-        margin: 0 auto 12.44rem auto;
-        padding: 4rem 1rem 0 1rem;
+        max-width: 1216px;
+        margin: 7rem auto 13.125rem;
+        padding: 0 1rem;
     }
 
     &__image {
@@ -12,43 +13,45 @@
         padding: 3px;
         margin-bottom: 1rem;
         border-radius: 50%;
-        border: 4px solid #CBD2D9;
-        background: #171F3F;
+        border: 4px solid $ghost;
+        background: $bigStone;
 
-        @media (min-width: 1440px) {
+        @media (min-width: $tablet) {
             width: 120px;
             padding: 4px;
-            margin: 4rem 0 2rem 7rem;
-            border: 6px solid #CBD2D9;
+            margin-bottom: 2rem;
+            border: 6px solid $ghost;
         }
     }
 
     &__header {
+        width: 100%;
+        max-width: 781px;
         margin: 0 0 0.5rem 0;
         font-style: normal;
         font-weight: 600;
         font-size: 1.625rem;
         line-height: 2.25rem;
 
-        @media (min-width: 1440px) {
-            width: 781px;
-            margin: 0 0 1rem 7rem;
+        @media (min-width: $tablet) {
+            margin-bottom: 1rem;
             font-size: 2.5rem;
             line-height: 3.5rem;
         }
     }
 
     &__description {
+        width: 100%;
+        max-width: 681px;
         margin: 0 0 2.5rem 0;
-        color: #52606D;
+        color: $shuttleGray;
         font-style: normal;
         font-weight: 300;
         font-size: 0.875rem;
         line-height: 1.625rem;
 
-        @media (min-width: 1440px) {
-            width: 781px;
-            margin: 0 0 3.75rem 7rem;
+        @media (min-width: $tablet) {
+            margin-bottom: 3.75rem;
             font-size: 1.25rem;
             line-height: 2.25rem;
         }
@@ -56,17 +59,15 @@
 
     &__email-link {
         padding-bottom: 0.5rem;
-        color: #0593FB;
+        color: $dodgerBlue;
         font-style: normal;
         font-weight: 500;
         font-size: 0.875rem;
         line-height: 1.5rem;
         text-decoration: none;
-        border-bottom: 2px solid #0593FB;
+        border-bottom: 2px solid $dodgerBlue;
 
-        @media (min-width: 1440px) {
-            width: 781px;
-            margin-left: 7rem;
+        @media (min-width: $tablet) {
             font-size: 1.25rem;
             line-height: 2rem;
         }

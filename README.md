@@ -10,7 +10,7 @@ Jest to strona przedstawiająca moje aktualne umiejętności oraz portfolio fron
 ## Opis grup w sekcji "Moje umiejętności"
 ### Wiedza praktyczna 💪
 W tej grupie znajdują się technologie, metodyka i umiejętności, w których cały czas tworze projekty. Posiadam wiedzę, która wystarczy do pracy, tzn. mogę w miarę samodzielnie robić rzeczy z tej grupy, jednak nie jestem jeszcze ekspertem.
-### Wiedza cząstkowa 😀
+### Wiedza cząstkowa ☺️
 Wiem coś, trochę na ten temat, używałem w swoich projektach, jednak nie jestem ekspertem.
 ### Chcę nauczyć się 👍
 Słyszałem coś o tym, wiem, do czego służy, jednak do tej pory nie miałem projektów, do których byłoby mi to potrzebne. Jednak gdy tylko będzie mi to potrzebne, chcę się tego nauczyć.

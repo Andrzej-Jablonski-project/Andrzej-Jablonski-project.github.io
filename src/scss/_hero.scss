@@ -1,10 +1,10 @@
 .hero {
-    margin: 4rem 1rem 8.125rem 1rem;
+    margin: 4rem 1rem 3.125rem 1rem;
 
     @media(min-width: $tablet) {
         width: 100%;
         max-width: 1216px;
-        margin: 7rem auto 13.125rem;
+        margin: 7rem auto 5.125rem;
         padding: 0 1rem;
     }
 
@@ -55,6 +55,13 @@
             font-size: 1.25rem;
             line-height: 2.25rem;
         }
+    }
+
+    &__link {
+        font-weight: 500;
+        color: $dodgerBlue;
+        border-bottom: 1px solid $dodgerBlue;
+        text-decoration-line: none;
     }
 
     &__email-link {

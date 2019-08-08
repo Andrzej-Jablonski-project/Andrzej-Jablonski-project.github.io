@@ -1,5 +1,5 @@
 # Moja osobista strona, portfolio frontendowe.
-![screenshot project](src/assets/img/cover.jpg)
+![screenshot project](src/assets/img/cover.png)
 ## Opis projektu 🚀
 Jest to strona przedstawiająca moje aktualne umiejętności oraz portfolio frontendowe. Projekt graficzny, makieta powstały w ramach WTF: Co ten frontend. Założenia, którymi się kierowałem podczas tworzenia to:
 - zbudowanie prostej i eleganckiej strony, bez zbędnych fajerwerków

@@ -6,13 +6,7 @@ fetch("https://api.github.com/users/Andrzej-Jablonski-project/repos?sort=desc")
   .then(resp => resp.json())
   .then(resp => {
     const repos = resp;
-    for (const repo of repos) {
-      const {
-        name,
-        description,
-        html_url,
-        homepage
-      } = repo;
+    const createCard = (name, description, homepage, html_url) => {
       if (description) {
         boxProjects.innerHTML += ` 
         <li class="card">
@@ -30,6 +24,32 @@ fetch("https://api.github.com/users/Andrzej-Jablonski-project/repos?sort=desc")
         </li>`;
       }
     }
+    for (const repo of repos) {
+      const {
+        name,
+        description,
+        html_url,
+        homepage
+      } = repo;
+      createCard(name, description, homepage, html_url);
+    }
+
+    function countCard(numberOfCard) {
+      const cards = document.querySelectorAll('.card');
+      const button = document.querySelector('.projects__button-more--js');
+      for (let i = 0; i < cards.length; i++) {
+        console.log(i);
+        if (i > numberOfCard - 1) {
+          cards[i].classList.add('card--off-js');
+        }
+      }
+      button.addEventListener('click', () => {
+        const cardsOff = document.querySelectorAll('.card--off-js');
+        cardsOff.forEach(card => card.className = 'card card--on-js')
+        button.style.display = 'none';
+      })
+    }
+    countCard(4);
   })
   .catch(error => {
     console.log(error)

@@ -46,6 +46,27 @@
             text-align: left;
         }
     }
+
+    &__button-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 0 auto;
+        height: 3rem;
+        width: 10rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: #ffffff;
+        background-color: #171F3F;
+        border-radius: 8px;
+        border: 2px solid #0593FB;
+        -webkit-box-shadow: 1px 2px 4px rgba(24, 41, 67, 0.5);
+        box-shadow: 1px 2px 4px rgba(24, 41, 67, 0.5);
+        cursor: pointer;
+    }
+
+
 }
 
 .card-list {
@@ -72,6 +93,7 @@
     box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
     border-radius: 4px;
     overflow: hidden;
+    z-index: 1;
 
     @media(min-width:$tablet) {
         margin-bottom: 0;
@@ -198,5 +220,19 @@
                 background-image: url(../assets/img/code-icon.svg);
             }
         }
+
+
+    }
+
+    &--on-js {
+        transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        height: auto;
+        transform: translateY(0);
+        z-index: 0;
+    }
+
+    &--off-js {
+        height: 0;
+        transform: translateY(-100%);
     }
 }

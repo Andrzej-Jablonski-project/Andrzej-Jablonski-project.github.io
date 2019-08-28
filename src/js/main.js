@@ -38,7 +38,6 @@ fetch("https://api.github.com/users/Andrzej-Jablonski-project/repos?sort=desc")
       const cards = document.querySelectorAll('.card');
       const button = document.querySelector('.projects__button-more--js');
       for (let i = 0; i < cards.length; i++) {
-        console.log(i);
         if (i > numberOfCard - 1) {
           cards[i].classList.add('card--off-js');
         }
@@ -54,3 +53,8 @@ fetch("https://api.github.com/users/Andrzej-Jablonski-project/repos?sort=desc")
   .catch(error => {
     console.log(error)
   })
+const texts = ['Nie jest najważniejsze, byś był lepszy od innych.Najważniejsze jest, byś był lepszy od samego siebie z dnia wczorajszego.',
+  'Ostatecznie, trudności to tylko rzeczy do przezwyciężenia.', '😀', '🃏', ' 😉'
+]
+
+texts.forEach(text => console.log(text))

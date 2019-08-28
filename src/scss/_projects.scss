@@ -51,10 +51,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2rem auto 0 auto;
+        margin: 0 auto;
         height: 3rem;
-        width: 10rem;
-        font-size: 1.5rem;
+        width: 8rem;
+        font-size: 1rem;
         font-weight: 600;
         line-height: 2rem;
         color: #ffffff;
@@ -64,6 +64,12 @@
         -webkit-box-shadow: 1px 2px 4px rgba(24, 41, 67, 0.5);
         box-shadow: 1px 2px 4px rgba(24, 41, 67, 0.5);
         cursor: pointer;
+
+        @media(min-width: $tablet) {
+            margin: 2rem auto 0;
+            width: 10rem;
+            font-size: 1.5rem;
+        }
     }
 
 
@@ -233,6 +239,7 @@
 
     &--off-js {
         height: 0;
+        margin-bottom: 0;
         transform: translateY(-100%);
     }
 }

@@ -550,6 +550,34 @@ body {
         font-size: 1.25rem;
         line-height: 2.25rem;
         text-align: left; } }
+  .projects__button-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #ffffff;
+    background-color: #171F3F;
+    border-radius: 8px;
+    border: 2px solid #0593FB;
+    -webkit-box-shadow: 1px 2px 4px rgba(24, 41, 67, 0.5);
+    box-shadow: 1px 2px 4px rgba(24, 41, 67, 0.5);
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .projects__button-more {
+        margin: 2rem auto 0;
+        width: 10rem;
+        font-size: 1.5rem; } }
 
 .card-list {
   display: -ms-grid;
@@ -583,7 +611,8 @@ body {
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   @media (min-width: 768px) {
     .card {
       margin-bottom: 0;
@@ -692,6 +721,23 @@ body {
       .card__link--github::before {
         content: "";
         background-image: url(../assets/img/code-icon.svg); }
+  .card--on-js {
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: auto;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    z-index: 0; }
+  .card--off-js {
+    height: 0;
+    margin-bottom: 0;
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%); }
 
 .contact {
   color: #ffffff;

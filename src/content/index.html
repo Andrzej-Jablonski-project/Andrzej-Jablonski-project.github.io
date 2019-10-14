@@ -1,121 +1,243 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Andrzeja Jabłońskiego.</title>
+    <meta
+      name="description"
+      content="Andrzej Jabłoński, Frontend developer. Moja strona osobista."
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Portfolio Andrzeja Jabłońskiego.</title>
-  <meta name="description" content="Andrzej Jabłoński, Frontend developer. Moja strona osobista." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio Andrzeja Jabłońskiego." />
+    <meta
+      property="og:description"
+      content="Andrzej Jabłoński, Frontend developer. Moja strona osobista."
+    />
+    <meta
+      property="og:url"
+      content="https://andrzej-jablonski-project.github.io/"
+    />
+    <meta
+      property="og:image"
+      content="https://andrzej-jablonski-project.github.io/assets/img/cover.png"
+    />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Portfolio Andrzeja Jabłońskiego." />
-  <meta property="og:description" content="Andrzej Jabłoński, Frontend developer. Moja strona osobista." />
-  <meta property="og:url" content="https://andrzej-jablonski-project.github.io/" />
-  <meta property="og:image" content="https://andrzej-jablonski-project.github.io/assets/img/cover.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/pwa/icons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/pwa/icons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/pwa/icons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/pwa/icons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/pwa/icons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/pwa/icons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/pwa/icons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/pwa/icons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/pwa/icons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/pwa/icons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/pwa/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/pwa/icons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/pwa/icons/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/pwa/icons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/pwa/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/pwa/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/pwa/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/pwa/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/pwa/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/pwa/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/pwa/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/pwa/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/pwa/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/pwa/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/pwa/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/pwa/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/pwa/icons/favicon-16x16.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="assets/pwa/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-
-<body>
-  <header class="hero">
-    <img src="assets/img/andrzej.jpg" alt="Zdjęcie Andrzeja Jabłońskiego." class="hero__image">
-    <h2 class="hero__header">Witam! 👋 Mam na imię Andrzej i jestem aspirującym Frontend developerem. Autor
-      bloga digi-chip.</h2>
-    <p class="hero__description">Możesz być zainteresowany sprawdzeniem <a class="hero__link" href="#skills">listy moich
-        umiejętności</a>. Nie zapomnij rzucić okiem na <a class="hero__link" href="#projects">moje projekty</a>. Obecnie
-      szukam nowych wyzwań, więc jeśli je masz - <a class="hero__link" href="#contact">skontaktuj się ze mną</a>.</p>
-    <a href="mailto:andrzej@audioszum.pl" class="hero__email-link">andrzej@audioszum.pl</a>
-  </header>
-  <main class="main">
-    <section id="skills" class="skills">
-      <h2 class="skills__title">Moje umiejętności</h2>
-      <section class="skills__group">
-        <h3 class="skills__subtitle">Wiedza praktyczna</h3>
-        <ul class="skills__list">
-          <li class="skills__item">Semantyczny HTML5</li>
-          <li class="skills__item">CSS grid</li>
-          <li class="skills__item">Flexbox</li>
-          <li class="skills__item">Markdown</li>
-          <li class="skills__item">JS: praca z DOM</li>
-          <li class="skills__item">JS: Local storage</li>
-          <li class="skills__item">SASS</li>
-          <li class="skills__item">Figma</li>
-        </ul>
-      </section>
-      <section class="skills__group">
-        <h3 class="skills__subtitle skills__subtitle--decoline-violet">Wiedza cząstkowa</h3>
-        <ul class="skills__list">
-          <li class="skills__item skills__item--icon-violet">Elementy JavaScript ES6+</li>
-          <li class="skills__item skills__item--icon-violet">Progressive web apps</li>
-          <li class="skills__item skills__item--icon-violet">Animacje CSS</li>
-          <li class="skills__item skills__item--icon-violet">Git</li>
-          <li class="skills__item skills__item--icon-violet">Praca z API</li>
-          <li class="skills__item skills__item--icon-violet">Dostępność (accessibility)</li>
-          <li class="skills__item skills__item--icon-violet">NPM Scripts</li>
-          <li class="skills__item skills__item--icon-violet">Język angielski, praca z dokumentacją plus słownik</li>
-        </ul>
-      </section>
-      <section class="skills__group">
-        <h3 class="skills__subtitle skills__subtitle--decoline-blue">Chcę nauczyć się</h3>
-        <ul class="skills__list">
-          <li class="skills__item skills__item--icon-blue">Język angielski</li>
-          <li class="skills__item skills__item--icon-blue">React JS</li>
-          <li class="skills__item skills__item--icon-blue">Typescript</li>
-          <li class="skills__item skills__item--icon-blue">Node.JS</li>
-          <li class="skills__item skills__item--icon-blue">Gatsby</li>
-          <li class="skills__item skills__item--icon-blue">Websockets</li>
-          <li class="skills__item skills__item--icon-blue">Server side rendering</li>
-        </ul>
-      </section>
-    </section>
-    <section id="projects" class="projects">
-      <div class="projects__container">
-        <h2 class="projects__title">Ostatnie projekty</h2>
-        <p class="projects__description">Ścieżkę Frontend developera zacząłem pod koniec 2018 roku. Od tego czasu
-          zbudowałem
-          kilka projektów. Oto lista rzeczy, które dotychczas zrobiłem.</p>
-        <ul class="card-list card-list--js">
-        </ul>
-        <buttton class="projects__button-more projects__button-more--js">Więcej</buttton>
-      </div>
-    </section>
-  </main>
-  <footer id="contact" class="contact">
-    <div class="contact__container">
-      <h2 class="contact__title">Skontaktuj się ze mną</h2>
-      <p class="contact__description">Jestem otwarty na nowe możliwości. Jeśli masz coś dla mnie, porozmawiajmy!
+  <body>
+    <header class="hero">
+      <img
+        src="assets/img/andrzej.jpg"
+        alt="Zdjęcie Andrzeja Jabłońskiego."
+        class="hero__image"
+      />
+      <h2 class="hero__header">
+        Witam! 👋 Mam na imię Andrzej i jestem aspirującym Frontend developerem.
+        Autor bloga digi-chip.
+      </h2>
+      <p class="hero__description">
+        Możesz być zainteresowany sprawdzeniem
+        <a class="hero__link" href="#skills">listy moich umiejętności</a>. Nie
+        zapomnij rzucić okiem na
+        <a class="hero__link" href="#projects">moje projekty</a>. Obecnie szukam
+        nowych wyzwań, więc jeśli je masz -
+        <a class="hero__link" href="#contact">skontaktuj się ze mną</a>.
       </p>
-      <ul class="contact__icons-list">
-        <li class="contact__icons-item"><a target="_blank" rel="noopener noreferrer"
-            href="https://www.facebook.com/rzufandrzej" class="contact__icon"></a></li>
-        <li class="contact__icons-item"><a target="_blank" rel="noopener noreferrer"
-            href="https://github.com/Andrzej-Jablonski-project" class="contact__icon contact__icon--image-github"></a>
-        </li>
-        <li class="contact__icons-item"><a target="_blank" rel="noopener noreferrer" href="https://digi-chip.pl"
-            class="contact__icon contact__icon--image-blog"></a></li>
-      </ul>
-      <a href="mailto:andrzej@audioszum.pl" class="contact__email-link">andrzej@audioszum.pl</a>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
-</body>
-
+      <a href="mailto:andrzej@audioszum.pl" class="hero__email-link"
+        >andrzej@audioszum.pl</a
+      >
+    </header>
+    <main class="main">
+      <section id="skills" class="skills">
+        <h2 class="skills__title">Moje umiejętności</h2>
+        <section class="skills__group">
+          <h3 class="skills__subtitle">Wiedza praktyczna</h3>
+          <ul class="skills__list">
+            <li class="skills__item">Semantyczny HTML5</li>
+            <li class="skills__item">CSS grid</li>
+            <li class="skills__item">Flexbox</li>
+            <li class="skills__item">Markdown</li>
+            <li class="skills__item">JS: praca z DOM</li>
+            <li class="skills__item">JS: Local storage</li>
+            <li class="skills__item">SASS</li>
+            <li class="skills__item">Figma</li>
+          </ul>
+        </section>
+        <section class="skills__group">
+          <h3 class="skills__subtitle skills__subtitle--decoline-violet">
+            Wiedza cząstkowa
+          </h3>
+          <ul class="skills__list">
+            <li class="skills__item skills__item--icon-violet">
+              Elementy JavaScript ES6+
+            </li>
+            <li class="skills__item skills__item--icon-violet">React JS</li>
+            <li class="skills__item skills__item--icon-violet">
+              Progressive web apps
+            </li>
+            <li class="skills__item skills__item--icon-violet">Animacje CSS</li>
+            <li class="skills__item skills__item--icon-violet">Git</li>
+            <li class="skills__item skills__item--icon-violet">Praca z API</li>
+            <li class="skills__item skills__item--icon-violet">
+              Dostępność (accessibility)
+            </li>
+            <li class="skills__item skills__item--icon-violet">NPM Scripts</li>
+            <li class="skills__item skills__item--icon-violet">
+              Język angielski, praca z dokumentacją plus słownik
+            </li>
+          </ul>
+        </section>
+        <section class="skills__group">
+          <h3 class="skills__subtitle skills__subtitle--decoline-blue">
+            Chcę nauczyć się
+          </h3>
+          <ul class="skills__list">
+            <li class="skills__item skills__item--icon-blue">
+              Język angielski (komunikatywny)
+            </li>
+            <li class="skills__item skills__item--icon-blue">Typescript</li>
+            <li class="skills__item skills__item--icon-blue">Node.JS</li>
+            <li class="skills__item skills__item--icon-blue">Gatsby</li>
+            <li class="skills__item skills__item--icon-blue">Websockets</li>
+            <li class="skills__item skills__item--icon-blue">
+              Server side rendering
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section id="projects" class="projects">
+        <div class="projects__container">
+          <h2 class="projects__title">Ostatnie projekty</h2>
+          <p class="projects__description">
+            Ścieżkę Frontend developera zacząłem pod koniec 2018 roku. Od tego
+            czasu zbudowałem kilka projektów. Oto lista rzeczy, które dotychczas
+            zrobiłem.
+          </p>
+          <ul class="card-list card-list--js"></ul>
+          <buttton class="projects__button-more projects__button-more--js"
+            >Więcej</buttton
+          >
+        </div>
+      </section>
+    </main>
+    <footer id="contact" class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Skontaktuj się ze mną</h2>
+        <p class="contact__description">
+          Jestem otwarty na nowe możliwości. Jeśli masz coś dla mnie,
+          porozmawiajmy!
+        </p>
+        <ul class="contact__icons-list">
+          <li class="contact__icons-item">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/rzufandrzej"
+              class="contact__icon"
+            ></a>
+          </li>
+          <li class="contact__icons-item">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Andrzej-Jablonski-project"
+              class="contact__icon contact__icon--image-github"
+            ></a>
+          </li>
+          <li class="contact__icons-item">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://digi-chip.pl"
+              class="contact__icon contact__icon--image-blog"
+            ></a>
+          </li>
+        </ul>
+        <a href="mailto:andrzej@audioszum.pl" class="contact__email-link"
+          >andrzej@audioszum.pl</a
+        >
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

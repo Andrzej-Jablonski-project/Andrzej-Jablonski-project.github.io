@@ -2,7 +2,7 @@
 
 const linkData = "https://api.github.com/users/Andrzej-Jablonski-project/repos?sort=desc";
 
-window.addEventListener('DOMContentLoaded', buildSectionProjects(linkData));
+document.addEventListener('DOMContentLoaded', buildSectionProjects(linkData));
 
 function buildSectionProjects(linkData){
 	fetch(linkData)
